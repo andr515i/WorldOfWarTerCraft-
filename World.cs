@@ -2,27 +2,26 @@
  */
 
 class World {
-  Space entry;
+  Space marineBase ;
   
   public World () {
-    Space entry    = new Space("Entry");
+    Space marineBase    = new Space("Marine base");
     Space corridor = new Space("Corridor");
-    Space cave     = new Space("Cave");
+    Space seaCave     = new Space("Sea cave");
     Space pit      = new Space("Darkest Pit");
     Space outside  = new Space("Outside");
     
-    entry.AddEdge("door", corridor);
-    corridor.AddEdge("door", cave);
-    cave.AddEdge("north", pit);
-    cave.AddEdge("south", outside);
-    pit.AddEdge("door", cave);
-    outside.AddEdge("door", cave);
+    marineBase.AddEdge("door", corridor);
+    corridor.AddEdge("door", seaCave);
+    seaCave.AddEdge("north", pit);
+    seaCave.AddEdge("south", outside);
+    pit.AddEdge("door", seaCave);
+    outside.AddEdge("door", seaCave);
     
-    this.entry = entry;
+    this.marineBase = marineBase;
   }
   
-  public Space GetEntry () {
-    return entry;
+  public Space GetMarineBase () {
+    return marineBase;
   }
 }
-

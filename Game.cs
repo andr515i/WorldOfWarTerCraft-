@@ -13,6 +13,7 @@ class Game {
     registry.Register("quit", cmdExit);
     registry.Register("bye", cmdExit);
     registry.Register("go", new CommandGo());
+    registry.Register("talk", new CommandNPC());
     registry.Register("help", new CommandHelp(registry));
   }
   

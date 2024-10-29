@@ -2,11 +2,11 @@
  */
 
 class World {
-  Space marineBase ;
+  Space beach ;
   
   public World () {
-    Space marineBase    = new Space("Marine base");
-    Space corridor = new Space("Corridor");
+    Space beach    = new Space("Beach");
+    Space mainBase = new Space("Coral shrine");
     Space seaCave     = new Space("Sea cave");
     Space pit      = new Space("Darkest Pit");
     Space outside  = new Space("Outside");

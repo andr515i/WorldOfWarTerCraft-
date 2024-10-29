@@ -27,17 +27,29 @@ class World {
     Space npc7         = new Space("Gahat the Ganges Shark");
     Space npc8         = new Space("Harold Herring");
     Space npc9         = new Space("Ian Icefish");
-    Space npcFin       = new Space("Jack the Jellyfish");
-    
+    Space npcFin       = new Space("John Dory");
+
+    //world map
     beach.AddEdge("sea", mainBase);
-    mainBase.AddEdge("left", challenge2);
     mainBase.AddEdge("right", challenge1);
+    mainBase.AddEdge("left", challenge2);
+        challenge2.AddEdge("home", mainBase);
+        challenge2.AddEdge("deeper", challenge3);
+              challenge3.AddEdge("back", challenge2);
+              challenge3.AddEdge("home", mainBase);
     mainBase.AddEdge("deeper", challenge4);
-    .AddEdge("left", mainBase);
-    mainBase.AddEdge("left", mainBase);
-    mainBase.AddEdge("left", mainBase);
-    mainBase.AddEdge("left", mainBase);
-  
+    
+    //npcs in mainBase
+    mainBase.AddEdge("Ariel", npc1);   
+    mainBase.AddEdge("Billy", npc2);
+    mainBase.AddEdge("Casper", npc3);
+    mainBase.AddEdge("Diddy", npc4);
+    mainBase.AddEdge("Egor", npc5);   
+    mainBase.AddEdge("Ferb", npc6);
+    mainBase.AddEdge("Gahat", npc7);
+    mainBase.AddEdge("Harold", npc8);
+    mainBase.AddEdge("Ian", npc9);   
+    mainBase.AddEdge("John", npcFin);
     
     this.marineBase = marineBase;
   }

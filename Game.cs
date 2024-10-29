@@ -18,7 +18,7 @@ class Game {
   }
   
   static void Main (string[] args) {
-    Console.WriteLine("Welcome to the World of Zuul!");
+    Console.WriteLine("Welcome to the World of Watercraft!");
     
     InitRegistry();
     context.GetCurrent().Welcome();
@@ -28,6 +28,6 @@ class Game {
       string? line = Console.ReadLine();
       if (line!=null) registry.Dispatch(line);
     }
-    Console.WriteLine("Game Over 😥");
+    Console.WriteLine("You died");
   }
 }

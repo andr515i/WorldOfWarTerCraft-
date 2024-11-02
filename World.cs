@@ -40,8 +40,28 @@ class World {
     challenge3.AddEdge("back", challenge2);
     challenge3.AddEdge("home", mainBase);
     
+    //Needs an item to get past this point, from challenge3
     mainBase.AddEdge("deeper", challenge4);
-    challenge4.AddEdge("home", challenge5);
+    challenge4.AddEdge("deeper", challenge5);
+    
+    //needs another item, you get it from challenge6
+    challenge4.AddEdge("Riptide detour", challenge7);
+    challenge4.AddEdge("home", mainBase):
+
+    //no item.
+    challenge5.AddEdge("to shipyard", challenge6);
+
+    //another item here, though you need it from challenge8
+    challenge5.AddEdge("to the caves", challenge9);
+    challenge5.AddEdge("home", mainBase);
+    
+    challenge6.AddEdge("to the dim shine", challenge8);
+    challenge6.AddEdge("home", mainBase);
+
+    //item required from challenge7
+    challenge8.AddEdge("home", mainBase);
+    challenge9.AddEdge("home", mainBase);
+    challenge9.AddEdge("the beach", challengeFin);
 
     
     //npcs in mainBase

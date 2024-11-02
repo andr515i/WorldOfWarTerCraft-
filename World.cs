@@ -46,21 +46,28 @@ class World {
     
     //needs another item, you get it from challenge6
     challenge4.AddEdge("Riptide detour", challenge7);
-    challenge4.AddEdge("home", mainBase):
+    challenge4.AddEdge("home", mainBase);
+
+    challenge7.AddEdge("back", challenge4);
+    challenge7.AddEdge("home", homeBase);
 
     //no item.
     challenge5.AddEdge("to shipyard", challenge6);
+    challenge5.AddEdge("home", mainBase);
+    challenge5.AddEdge("back", challenge4);
 
     //another item here, though you need it from challenge8
     challenge5.AddEdge("to the caves", challenge9);
-    challenge5.AddEdge("home", mainBase);
     
     challenge6.AddEdge("to the dim shine", challenge8);
     challenge6.AddEdge("home", mainBase);
+    challenge6.AddEdge("back", challenge5);
 
     //item required from challenge7
     challenge8.AddEdge("home", mainBase);
+    challenge8.AddEdge("back", challenge6);
     challenge9.AddEdge("home", mainBase);
+    challenge9.AddEdge("back", challenge5);
     challenge9.AddEdge("the beach", challengeFin);
 
     

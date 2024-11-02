@@ -14,3 +14,5 @@ class CommandNPC : BaseCommand, ICommand {
     context.Transition(parameters[0]);
   }
 }
+
+

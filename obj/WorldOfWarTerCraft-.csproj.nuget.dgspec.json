@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj": {}
+    "C:\\Users\\andre\\Desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj": {
+    "C:\\Users\\andre\\Desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj",
         "projectName": "WorldOfWarTerCraft-",
-        "projectPath": "C:\\Users\\andre\\desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj",
+        "projectPath": "C:\\Users\\andre\\Desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\WorldOfWarTerCraft-.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\Semester Projekt World Of Zuul\\WorldOfWarTerCraft-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"

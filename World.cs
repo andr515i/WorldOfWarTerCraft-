@@ -32,16 +32,16 @@ class World {
     //world map
     beach.AddEdge("sea", mainBase);
     mainBase.AddEdge("right", challenge1);
-        challenge1.AddEdge("home", mainBase);
+    challenge1.AddEdge("home", mainBase);
 
     mainBase.AddEdge("left", challenge2);
-        challenge2.AddEdge("home", mainBase);
-        challenge2.AddEdge("deeper", challenge3);
-              challenge3.AddEdge("back", challenge2);
-              challenge3.AddEdge("home", mainBase);
+    challenge2.AddEdge("home", mainBase);
+    challenge2.AddEdge("deeper", challenge3);
+    challenge3.AddEdge("back", challenge2);
+    challenge3.AddEdge("home", mainBase);
     
     mainBase.AddEdge("deeper", challenge4);
-        challenge4.AddEdge("home", challenge5);
+    challenge4.AddEdge("home", challenge5);
 
     
     //npcs in mainBase

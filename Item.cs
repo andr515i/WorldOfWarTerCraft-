@@ -59,4 +59,11 @@ public string GetName()
     }
     return itemDescription; 
     }
+
+    public override string ToString() 
+    {
+    return $"Name Item = {GetName()} , Effekt = {GetEffect()}, ItemDescription at = {GetDescription()}";
+    }
+
+    
 }

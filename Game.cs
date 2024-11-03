@@ -18,6 +18,15 @@ class Game {
   }
   
   static void Main (string[] args) {
+
+  Item[,] Items = new Item[2,9];
+  Inventory inventory = new Inventory (Items);
+  inventory.AddItem(new Item ("plastik" , 2, 2));
+  inventory.AddItem(new Item ("plastik" , 2, 2));
+  inventory.AddItem(new Item ("plastik" , 2, 2));
+  inventory.AddItem(new Item ("plastik" , 2, 2));
+  inventory.InventoryDisplay();
+
    Console.WriteLine("Welcome to the World of Watercraft!");
     InitRegistry();
     context.GetCurrent().Welcome();

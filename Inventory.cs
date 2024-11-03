@@ -3,9 +3,9 @@ using System.Security.Cryptography;
 class Inventory 
 {
 // Atributes 
-    private Item[] Items;
+    private Item[,] Items;
 // Constructor 
-public Inventory (Item[] Items) 
+public Inventory (Item[,] Items) 
 {
     this.Items = Items;
 }
@@ -17,7 +17,7 @@ public void InventoryDisplay (Item NewItem) {
         {
             for (int j = 0; j < Items.GetLength(1); j++)
             {
-                Console.Write(Items[i , j]);
+                Console.WriteLine(Items[i,j]);
             }
         }
         Console.WriteLine();
@@ -25,6 +25,7 @@ public void InventoryDisplay (Item NewItem) {
 }
     
 // Method for addig items to inventory 
+/*
 public void AddItem (Item NewItem) {
 
         for (int i = 0 ; i< Items.Length ; i++ )
@@ -37,3 +38,4 @@ public void AddItem (Item NewItem) {
         } 
     }
 }
+*/

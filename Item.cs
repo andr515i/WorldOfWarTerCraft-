@@ -4,11 +4,10 @@ class Item {
     private string name; 
     private int effect; 
     private int keyNumber; 
+
+public string itemDescription;
+
 // Constructor
-public string itemDescription = null;
-
-
-
 public Item (string name, int effect, int keyNumber)
 {
     this.name = name; 

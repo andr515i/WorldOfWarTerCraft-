@@ -18,25 +18,14 @@ class Game {
   }
   
   static void Main (string[] args) {
-
-    // Initializing the Iems array with some items.
-Item [] Items = new Item[] 
-{
-new Item ("Nøgle"),
-new Item ("HavNøgle"),
-new Item ("DeepSeaNøgle"),
-new Item ("Gummibåd")
-};
-    Console.WriteLine("Welcome to the World of Watercraft!");
-    
-   
-    
+   Console.WriteLine("Welcome to the World of Watercraft!");
     InitRegistry();
     context.GetCurrent().Welcome();
     
     while (context.IsDone()==false) {
       Console.Write("> ");
       string? line = Console.ReadLine();
+      // Converts input from user to lowercase:)
       line = line.ToLower();
       if (line!=null) registry.Dispatch(line);
     }

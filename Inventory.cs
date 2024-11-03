@@ -39,17 +39,10 @@ public void RemoveItem (string ItemName)
 using System.Collections;
 using System.Security.Cryptography;
 
-class Inventory
-{
-    static void Main(string[] args)
-    {
-        ArrayList item = new ArrayList();
 
-        item.Add(new Item("Plastic trash", 69, 1));
-    }
-}
 
-class Item
+
+/*class Item
 {
     public string title;
     public int effect;
@@ -61,3 +54,4 @@ class Item
         this.keyNumber = _keyNumber;
     }
 }
+*/ 

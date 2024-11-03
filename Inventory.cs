@@ -1,15 +1,16 @@
-using System.Security.Cryptography.X509Certificates;
-/*
 class Inventory 
 {
+// Atributes 
     private Items[] Items;
+// Constructor 
 public Inventory (Items[] Items) 
 {
     this.Items = Items;
 }
 
+// Method for addig items to inventory 
 public void AddItem (Item NewItem) {
-    if (NewItem is Items) {
+
         for (int i = 0 ; i< Items.Length ; i++ )
         {
             if (Items[i]== null)
@@ -21,5 +22,15 @@ public void AddItem (Item NewItem) {
     }
 }
    
+// Method for removing items from inventory
+public void RemoveItem (string ItemName) 
+{
+    for (int i = 0 ; i<Items.Length ; i++) 
+    {
+        if (Items[i] != null && Items[i].GetName() == ItemName)
+        {
+            Items[i]= null;
+            break; 
+        }
+    }
 }
-*/

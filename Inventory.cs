@@ -17,7 +17,10 @@ public void InventoryDisplay() {
     {
         for (int j = 0; j < Items.GetLength(1); j++) 
         {
+            //Makes sure it only prints Item in inventory if there are any.
+            if (Items[i,j]!= null) {
             Console.WriteLine(Items[i,j]);
+            }
         }
     }
 } 
@@ -28,6 +31,7 @@ public void AddItem (Item NewItem)
     {
         for (int j = 0 ; j< Items.GetLength(1);j++)
         {
+            // Checks if there is place for a new item
             if(Items[i,j]==null)
             {
                 Items[i,j] = (Item)NewItem;

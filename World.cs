@@ -45,7 +45,7 @@ class World {
     challenge4.AddEdge("deeper", challenge5);
     
     //needs another item, you get it from challenge6
-    challenge4.AddEdge("Riptide", challenge7);
+    challenge4.AddEdge("riptide", challenge7);
     challenge4.AddEdge("home", mainBase);
 
     challenge7.AddEdge("back", challenge4);
@@ -57,9 +57,9 @@ class World {
     challenge5.AddEdge("back", challenge4);
 
     //another item here, though you need it from challenge8
-    challenge5.AddEdge("Caves", challenge9);
+    challenge5.AddEdge("caves", challenge9);
     
-    challenge6.AddEdge("DimShine", challenge8);
+    challenge6.AddEdge("abyss", challenge8);
     challenge6.AddEdge("home", mainBase);
     challenge6.AddEdge("back", challenge5);
 
@@ -68,20 +68,30 @@ class World {
     challenge8.AddEdge("back", challenge6);
     challenge9.AddEdge("home", mainBase);
     challenge9.AddEdge("back", challenge5);
-    challenge9.AddEdge("Beach", challengeFin);
+    challenge9.AddEdge("beach", challengeFin);
 
     
     //npcs in mainBase
-    mainBase.AddEdge("Ariel", npc1);   
-    mainBase.AddEdge("Billy", npc2);
-    mainBase.AddEdge("Casper", npc3);
-    mainBase.AddEdge("Diddy", npc4);
-    mainBase.AddEdge("Egor", npc5);   
-    mainBase.AddEdge("Ferb", npc6);
-    mainBase.AddEdge("Gahat", npc7);
-    mainBase.AddEdge("Harold", npc8);
-    mainBase.AddEdge("Ian", npc9);   
-    mainBase.AddEdge("John", npcFin);
+    mainBase.AddEdge("ariel", npc1);   
+    npc1.AddEdge("back", mainBase);  
+    mainBase.AddEdge("billy", npc2);
+    npc2.AddEdge("back", mainBase); 
+    mainBase.AddEdge("casper", npc3);
+    npc3.AddEdge("back", mainBase); 
+    mainBase.AddEdge("diddy", npc4);
+    npc4.AddEdge("back", mainBase); 
+    mainBase.AddEdge("egor", npc5); 
+    npc5.AddEdge("back", mainBase); 
+    mainBase.AddEdge("ferb", npc6);
+    npc6.AddEdge("back", mainBase); 
+    mainBase.AddEdge("gahat", npc7);
+    npc7.AddEdge("back", mainBase); 
+    mainBase.AddEdge("harold", npc8);
+    npc8.AddEdge("back", mainBase); 
+    mainBase.AddEdge("ian", npc9);
+    npc9.AddEdge("back", mainBase); 
+    mainBase.AddEdge("john", npcFin);
+    npcFin.AddEdge("back", mainBase); 
     
     this.beach = beach;
   }

@@ -1,4 +1,4 @@
-class Inventory 
+/*class Inventory 
 {
 // Atributes 
     private Items[] Items;
@@ -32,5 +32,32 @@ public void RemoveItem (string ItemName)
             Items[i]= null;
             break; 
         }
+    }
+}
+*/
+
+using System.Collections;
+using System.Security.Cryptography;
+
+class Inventory
+{
+    static void Main(string[] args)
+    {
+        ArrayList item = new ArrayList();
+
+        item.Add(new Item("Plastic trash", 69, 1));
+    }
+}
+
+class Item
+{
+    public string title;
+    public int effect;
+    public int keyNumber;
+    public Item(string _title, int _effect, int _keyNumber)
+    {
+        this.title = _title;
+        this.effect = _effect;
+        this.keyNumber = _keyNumber;
     }
 }

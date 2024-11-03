@@ -49,7 +49,7 @@ class World {
     challenge4.AddEdge("home", mainBase);
 
     challenge7.AddEdge("back", challenge4);
-    challenge7.AddEdge("home", homeBase);
+    challenge7.AddEdge("home", mainBase);
 
     //no item.
     challenge5.AddEdge("to shipyard", challenge6);

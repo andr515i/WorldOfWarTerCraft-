@@ -17,6 +17,7 @@ class Game {
     //registry.Register("talk", new CommandNPC());
     registry.Register("help", new CommandHelp(registry));
     registry.Register("inventory", new CommandInventory()); 
+    registry.Register("inv", new CommandInventory()); 
   }
   
   static void Main (string[] args) {

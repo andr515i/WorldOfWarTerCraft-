@@ -19,7 +19,7 @@ class Game {
   
   static void Main (string[] args) {
 // Test to see if you can add items to inventory! 
-  Item[,] Items = new Item[1,9];
+  Item[] Items = new Item[4];
   Inventory inventory = new Inventory (Items);
   inventory.AddItem(new Item ("plastik" , 2, 2));
   inventory.AddItem(new Item ("skraldepose" , 3, 4));

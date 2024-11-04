@@ -4,6 +4,7 @@ class Item {
     private string name; 
     private int effect; 
     private int keyNumber; 
+    
 
 public string itemDescription;
 

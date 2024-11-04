@@ -51,5 +51,16 @@ public void AddItem (Item NewItem)
         
     }
 }
+public bool HasItem(int keyNumber)
+{
+    foreach (Item item in Items)
+    {
+        if (item != null && item.GetID() == keyNumber)
+        {
+            return true;
+        }
+    } 
+    return false; 
+}
 
 }

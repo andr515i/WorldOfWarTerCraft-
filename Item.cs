@@ -43,7 +43,7 @@ public string GetName()
     switch (keyNumber)
     { 
     case 1:
-        itemDescription = "1";
+        itemDescription = "'A plasticwrapper of some sort, looks yummy, but might be of use.'";
         break;
     case 2:
         itemDescription = "2";

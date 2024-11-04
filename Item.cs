@@ -15,16 +15,17 @@ public Item (string name, int effect, int keyNumber)
     this.effect = effect; 
     this.keyNumber = keyNumber; 
 
+
+}
 public string FirstCharToUpper(string str)
 {
-    if (str == null)
+    if (str == null) 
         return null;
 
     if (str.Length > 1)
         return char.ToUpper(str[0]) + str.Substring(1);
 
     return str.ToUpper();
-}
 }
 // methods 
 public string GetName() 
@@ -74,7 +75,7 @@ public string GetName()
 
     public override string ToString() 
     {
-    return $"{GetName().FirstCharToUpper} '\t' {GetEffect()} '\t' {GetDescription()}";
+    return $"{FirstCharToUpper(GetName())} \t {GetEffect()} \t {GetDescription()}";
     }
 
     

@@ -17,13 +17,13 @@ public Item (string name, int effect, int keyNumber)
 
 
 }
-public string FirstCharToUpper(string str)
+public static string FirstCharToUpper(string str)
 {
     if (str == null) 
         return null;
 
     if (str.Length > 1)
-        return char.ToUpper(str[0]) + str.Substring(1);
+        return char.ToUpper(str[0]) + str[1..];
 
     return str.ToUpper();
 }
@@ -43,7 +43,7 @@ public string GetName()
     switch (keyNumber)
     { 
     case 1:
-        itemDescription = "'A plasticwrapper of some sort, looks yummy, but might be of use.'";
+        itemDescription = "'A plasticwrapper of some sort, looks yummy.'";
         break;
     case 2:
         itemDescription = "2";
@@ -64,10 +64,10 @@ public string GetName()
         itemDescription = "7";
         break;
     case 8:
-        itemDescription = "8";
+        itemDescription = "'My friend was tragically mudered by this'";
         break;
     case 9:
-        itemDescription = "9";
+        itemDescription = "'That could kill someone'";
         break;
     }
     return itemDescription; 

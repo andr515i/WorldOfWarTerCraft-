@@ -18,7 +18,7 @@ class Context {
     if (next==null) {
       Console.WriteLine("You are confused, and walk in a circle looking for '"+direction+"'. In the end you give up 😩");
     } else {
-      current.Goodbye();
+            Space.Goodbye();
       current = next;
       current.Welcome();
     }

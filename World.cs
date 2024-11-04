@@ -29,8 +29,19 @@ class World {
     Space npc9         = new Space("Ian Icefish");
     Space npcFin       = new Space("John Dory");
 
+    Space item1        = new Space("Plastic wrapper");
+    Space item2        = new Space("Plastic wrapper");
+    Space item3        = new Space("Plastic wrapper");
+    Space item4        = new Space("Plastic wrapper");
+    Space item5        = new Space("Plastic wrapper");
+    Space item6        = new Space("Plastic wrapper");
+    Space item7        = new Space("Plastic wrapper");
+    Space item8        = new Space("Plastic wrapper");
+    Space item9        = new Space("Plastic wrapper");
+
     //world map
     beach.AddEdge("sea", mainBase);
+    mainBase.AddEdge("home", mainBase);
     mainBase.AddEdge("right", challenge1);
     mainBase.AddEdge("left", challenge2);
     mainBase.AddEdge("deeper", challenge4);
@@ -67,6 +78,9 @@ class World {
     challenge9.AddEdge("back", challenge5);
     challenge9.AddEdge("beach", challengeFin);
 
+    challengeFin.AddEdge("back", challenge9);
+    challengeFin.AddEdge("home", mainBase);
+
     
     //npcs in mainBase
     mainBase.AddEdge("ariel", npc1);
@@ -92,6 +106,43 @@ class World {
         npcFin.AddEdge("back", mainBase);
 
         this.beach = beach;
+
+  //Items in world
+  challenge1.AddEdge("trash", item1);
+    item1.AddEdge("back", challenge1);
+    item1.AddEdge("home", mainBase);
+
+  challenge2.AddEdge("trash", item2);
+    item2.AddEdge("back", challenge2);
+    item2.AddEdge("home", mainBase);
+
+  challenge3.AddEdge("trash", item3);
+    item3.AddEdge("back", challenge3);
+    item3.AddEdge("home", mainBase);
+
+  challenge4.AddEdge("trash", item4);
+    item4.AddEdge("back", challenge4);
+    item4.AddEdge("home", mainBase);
+
+  challenge5.AddEdge("trash", item5);
+    item5.AddEdge("back", challenge5);
+    item5.AddEdge("home", mainBase);
+
+  challenge6.AddEdge("trash", item6);
+    item6.AddEdge("back", challenge6);
+    item6.AddEdge("home", mainBase);
+
+  challenge7.AddEdge("trash", item7);
+    item7.AddEdge("back", challenge7);
+    item7.AddEdge("home", mainBase);
+
+  challenge8.AddEdge("trash", item8);
+    item8.AddEdge("back", challenge8);
+    item8.AddEdge("home", mainBase);
+
+  challenge9.AddEdge("trash", item9);
+    item9.AddEdge("back", challenge9);
+    item9.AddEdge("home", mainBase);
   }
   
   public Space GetBeach() {

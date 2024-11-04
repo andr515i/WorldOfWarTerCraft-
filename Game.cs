@@ -29,6 +29,7 @@ class Game {
     while (context.IsDone()==false) {
       Console.WriteLine();
       string? line = Console.ReadLine();
+      Console.WriteLine();
       // Converts input from user to lowercase:)
       line = line.ToLower();
       if (line!=null) registry.Dispatch(line);

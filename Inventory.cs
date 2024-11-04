@@ -28,6 +28,11 @@ static string PrintDashes(int length)
             {
                 Console.WriteLine(Items[i]);
             }
+            else if (Items[i]==null) 
+            {
+                Console.WriteLine("Inventory was empty");
+                break; 
+            }
         }
         Console.WriteLine();  
     }

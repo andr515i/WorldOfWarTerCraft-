@@ -18,16 +18,16 @@ class World {
     Space challenge9   = new Space("Hidden Plastic Parasite");
     Space challengeFin = new Space("Clean beach");
 
-    Space npc1         = new Space("Ariel Angler");
-    Space npc2         = new Space("Billy Blobfish");
-    Space npc3         = new Space("Casper Clam");
-    Space npc4         = new Space("Diddy Dolphin");
-    Space npc5         = new Space("Egor Eel");
-    Space npc6         = new Space("Ferb the Flying Fish");
-    Space npc7         = new Space("Gahat the Ganges Shark");
-    Space npc8         = new Space("Harold Herring");
-    Space npc9         = new Space("Ian Icefish");
-    Space npcFin       = new Space("John Dory");
+    Space npc1         = new Space("Ahoy Skipper I’m Ariel Angler, but you can just call me Ariel. Now you might have noticed that these seas and waters have a whole lotta plastic in ‘em. Now would you believe that around 12 million tons get thrown in the ocean, each year? That’s like, a lot.");
+    Space npc2         = new Space("So you’re the new turtle, huh? I’m Billy Blobfish, now well listen up, and listen well. There are these things, fishing boats, they catch fish with their nets. Trouble is, they loose and drop these nets, making the ocean less clean. Now i’ve talked and looked around, and they pollute our ocean with 0.6 million tons of those nylon fishing nets each year, so stay safe, turtle.");
+    Space npc3         = new Space("Greeting turtle my name is Casper, Casper Clam, I will keep this short. There is a lot of microplastics in the ocean, a whole 1.5 million tons find their way here each year. From what Ariel told me, that would be 12.5%, so be aware of the invisible killer plastic.");
+    Space npc4         = new Space("Hey-hey turtle, Danny the Dolphin here. Now i’ve been swimming far and wide, and I’ve seen the plastic on land with my very own eyes. Here’s the kicker though, when it rains, or storms come in, can you guess where all that plastic ends up? That’s right, here with us, in the ocean. From what my Dolphin brothers have gathered, its anywhere from 1.15 to 2.41 million tons, each year.");
+    Space npc5         = new Space("Ah, turtle, come for the knowledge i hold? Well let me tell you, my name is Egor Eel, I was born in the Yangtze river. Let me tell you, it was the most polluted, plastic ridden river I have EVER seen. So I counted for a year, and about 300 thousand tons of plastic passes through that river and into the ocean. Each year of course.");
+    Space npc6         = new Space("Hi, I’m Ferb the flying fish, or so the others call me. I’ve been flying, as you might have guessed, and I have seen, a lot. The main polluters of our glorious and beautiful ocean are Asia first, then Africa second. Hope it helps ya.");
+    Space npc7         = new Space("I am the wise Gahat, i am a Ganges shark. Ariel has told you how much plastic we get each year, now I am here to tell you what we already have. The oceans have around 260 millions tons of plastic. Now go turtle, and come back ever so slightly more wise.");
+    Space npc8         = new Space("Turtle, i am Harold Herring. I have worked with my kin, and we have quite precisely worked out that 67% of pollution in the sea, comes from Asia. So brave turtle, if you value your life, do not go near the seas of Asia.");
+    Space npc9         = new Space("Hark Turtle, I am Ian Icefish, friend of Casper clam. For my friend, I searched far and wide for the source of the microplastics. I have come to the conclusion that it is a breakdown of textiles, rubber and wear from other plastics. It is also made when they make other plastics. Go inspire, brave little turtle.");
+    Space npcFin       = new Space("Turtle, I am John Dory. If you want the next generation of turtles to go through less hardships, and trash, you must rally your turtle kin and clean the beach. Be warned, your turtle brethren will require proof of leadership, in the form of knowledge.");
 
     Space item1        = new Space("Plastic wrapper");
     Space item2        = new Space("Plastic wrapper");
@@ -86,7 +86,7 @@ class World {
     mainBase.AddEdge("ariel", npc1);
     mainBase.AddEdge("billy", npc2); 
     mainBase.AddEdge("casper", npc3); 
-    mainBase.AddEdge("diddy", npc4); 
+    mainBase.AddEdge("danny", npc4); 
     mainBase.AddEdge("egor", npc5); 
     mainBase.AddEdge("ferb", npc6); 
     mainBase.AddEdge("gahat", npc7); 

@@ -1,7 +1,14 @@
-class Item(int itemID, int effect)
+class Item
 {
-    private int itemID = itemID; 
-    private int effect = effect;  
+    // Atributes 
+    private int itemID;
+    private int effect
+    // Constructor
+public Item (int itemID , int effect)
+{
+   this.itemID = itemID;
+   this.effect = effect; 
+}
 
     public required string itemName;
     public required string itemDescription;

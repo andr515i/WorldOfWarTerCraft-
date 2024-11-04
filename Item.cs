@@ -63,7 +63,7 @@ public string GetName()
 
     public override string ToString() 
     {
-    return $"Name Item = {GetName()} , Effekt = {GetEffect()}, ItemDescription = {GetDescription()}";
+    return $"{GetName()} '\t' {GetEffect()} '\t' {GetDescription()}";
     }
 
     

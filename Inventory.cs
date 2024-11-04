@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 class Inventory 
 {
 // Atributes 
-    private Item[] Items;
+    public Item[] Items;
 // Constructor 
 public Inventory (Item[] Items) 
 {

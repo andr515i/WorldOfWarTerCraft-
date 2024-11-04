@@ -1,6 +1,6 @@
 class CommandInventory : BaseCommand, ICommand
 {
-    Item [] Items;
+    Item[] Items;
     public CommandInventory() {
         this.description = "Display the player's inventory";
     }

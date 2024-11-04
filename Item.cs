@@ -1,11 +1,10 @@
-class Item(string name, int effect, int keyNumber)
+class Item(int itemID, int effect)
 {
-    private string name = name; 
-    private int effect = effect; 
-    private int keyNumber = keyNumber; 
-    
+    private int itemID = itemID; 
+    private int effect = effect;  
 
-public required string itemDescription;
+    public required string itemName;
+    public required string itemDescription;
 
     public static string? FirstCharToUpper(string str)
 {

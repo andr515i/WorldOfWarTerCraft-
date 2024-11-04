@@ -1,4 +1,4 @@
-class Item
+public class Item
 {
     // Atributes 
     private int itemID;
@@ -10,8 +10,8 @@ public Item (int itemID , int effect)
    this.effect = effect; 
 }
 
-    public required string itemName;
-    public required string itemDescription;
+    public string? itemName;
+    public string? itemDescription;
 
     public static string? FirstCharToUpper(string str)
 {

@@ -1,9 +1,9 @@
 using System.Security.Cryptography;
 
-class Inventory 
+public class Inventory 
 {
 // Atributes 
-    public Item[] Items;
+    private Item[] Items;
 // Constructor 
 public Inventory (Item[] Items) 
 {

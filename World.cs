@@ -32,68 +32,66 @@ class World {
     //world map
     beach.AddEdge("sea", mainBase);
     mainBase.AddEdge("right", challenge1);
+    mainBase.AddEdge("left", challenge2);
+    mainBase.AddEdge("deeper", challenge4);
+
+    //every challange besides the first one, needs an item to access.
     challenge1.AddEdge("home", mainBase);
 
-    mainBase.AddEdge("left", challenge2);
     challenge2.AddEdge("home", mainBase);
     challenge2.AddEdge("deeper", challenge3);
+
     challenge3.AddEdge("back", challenge2);
     challenge3.AddEdge("home", mainBase);
     
-    //Needs an item to get past this point, from challenge3
-    mainBase.AddEdge("deeper", challenge4);
     challenge4.AddEdge("deeper", challenge5);
-    
-    //needs another item, you get it from challenge6
     challenge4.AddEdge("riptide", challenge7);
     challenge4.AddEdge("home", mainBase);
 
-    challenge7.AddEdge("back", challenge4);
-    challenge7.AddEdge("home", mainBase);
-
-    //no item.
     challenge5.AddEdge("shipyard", challenge6);
     challenge5.AddEdge("home", mainBase);
     challenge5.AddEdge("back", challenge4);
-
-    //another item here, though you need it from challenge8
     challenge5.AddEdge("caves", challenge9);
-    
+
     challenge6.AddEdge("abyss", challenge8);
     challenge6.AddEdge("home", mainBase);
     challenge6.AddEdge("back", challenge5);
 
-    //item required from challenge7
+    challenge7.AddEdge("back", challenge4);
+    challenge7.AddEdge("home", mainBase);
+    
     challenge8.AddEdge("home", mainBase);
     challenge8.AddEdge("back", challenge6);
+
     challenge9.AddEdge("home", mainBase);
     challenge9.AddEdge("back", challenge5);
     challenge9.AddEdge("beach", challengeFin);
 
     
     //npcs in mainBase
-    mainBase.AddEdge("ariel", npc1);   
-    npc1.AddEdge("back", mainBase);  
-    mainBase.AddEdge("billy", npc2);
-    npc2.AddEdge("back", mainBase); 
-    mainBase.AddEdge("casper", npc3);
-    npc3.AddEdge("back", mainBase); 
-    mainBase.AddEdge("diddy", npc4);
-    npc4.AddEdge("back", mainBase); 
+    mainBase.AddEdge("ariel", npc1);
+    mainBase.AddEdge("billy", npc2); 
+    mainBase.AddEdge("casper", npc3); 
+    mainBase.AddEdge("diddy", npc4); 
     mainBase.AddEdge("egor", npc5); 
-    npc5.AddEdge("back", mainBase); 
-    mainBase.AddEdge("ferb", npc6);
-    npc6.AddEdge("back", mainBase); 
-    mainBase.AddEdge("gahat", npc7);
-    npc7.AddEdge("back", mainBase); 
-    mainBase.AddEdge("harold", npc8);
-    npc8.AddEdge("back", mainBase); 
-    mainBase.AddEdge("ian", npc9);
-    npc9.AddEdge("back", mainBase); 
+    mainBase.AddEdge("ferb", npc6); 
+    mainBase.AddEdge("gahat", npc7); 
+    mainBase.AddEdge("harold", npc8); 
+    mainBase.AddEdge("ian", npc9); 
     mainBase.AddEdge("john", npcFin);
-    npcFin.AddEdge("back", mainBase); 
-    
-    this.beach = beach;
+
+        npc1.AddEdge("back", mainBase);
+        npc2.AddEdge("back", mainBase);
+        npc3.AddEdge("back", mainBase);
+        npc4.AddEdge("back", mainBase);
+        npc5.AddEdge("back", mainBase);
+        npc6.AddEdge("back", mainBase);
+        npc7.AddEdge("back", mainBase);
+        npc8.AddEdge("back", mainBase);
+        npc9.AddEdge("back", mainBase);
+        npcFin.AddEdge("back", mainBase);
+
+        this.beach = beach;
   }
   
   public Space GetBeach() {

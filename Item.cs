@@ -2,7 +2,7 @@ class Item
 {
     // Atributes 
     private int itemID;
-    private int effect
+    private int effect;
     // Constructor
 public Item (int itemID , int effect)
 {

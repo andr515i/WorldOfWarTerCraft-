@@ -19,9 +19,6 @@ class Game {
   }
   
   static void Main (string[] args) {
-// Test to see if you can add items to inventory! 
- 
-
    Console.WriteLine("Welcome to Trashtopia!");
    Console.WriteLine();
     InitRegistry();

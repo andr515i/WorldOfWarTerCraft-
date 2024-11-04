@@ -11,7 +11,7 @@ class Space : Node {
     HashSet<string> exits = edges.Keys.ToHashSet();
     Console.WriteLine("Current exits are:");
     foreach (String exit in exits) {
-      Console.WriteLine(" - "+exit);
+      Console.WriteLine(" - " + exit);
     }
   }
   

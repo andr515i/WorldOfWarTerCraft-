@@ -3,36 +3,35 @@ using System.Security.Cryptography;
 class Inventory 
 {
 // Atributes 
-private Item[] Items;
+    private Item[] Items;
 // Constructor 
 public Inventory (Item[] Items) 
 {
     this.Items = Items;
 }
-
 static string PrintDashes(int length)
     {
         return new string('-', length);
     }
 
-// Inventory display
-public void InventoryDisplay()
-{
-    Console.WriteLine("Inventory:");
-    Console.WriteLine("Name \t\t Effect \t Description");
-    Console.WriteLine(PrintDashes(44));
-        
-    for (int i = 0; i < Items.Length; i++)
+    // Inventory display
+    public void InventoryDisplay()
     {
-        // Makes sure it only prints Item in inventory if there are any.
-        if (Items[i] != null)
+        Console.WriteLine("Inventory:");
+        Console.WriteLine("Name \t\t Effect \t Description");
+        Console.WriteLine(PrintDashes(44));
+        
+        for (int i = 0; i < Items.Length; i++)
         {
-            Console.WriteLine(Items[i]);
+            // Makes sure it only prints Item in inventory if there are any.
+            if (Items[i] != null)
+            {
+                Console.WriteLine(Items[i]);
+            }
         }
+        Console.WriteLine();  
     }
-}
 
-// Method for adding Items to inventory
 public void AddItem (Item NewItem) 
 {
     for (int i = 0 ; i< Items.Length;i++)
@@ -47,9 +46,4 @@ public void AddItem (Item NewItem)
         
     }
 }
-    
-
- }
-
-
-
+}

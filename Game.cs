@@ -22,12 +22,13 @@ class Game {
 // Test to see if you can add items to inventory! 
  
 
-   Console.WriteLine("Welcome to the World of Watercraft!");
+   Console.WriteLine("Welcome to Trashtopia!");
+   Console.WriteLine();
     InitRegistry();
     context.GetCurrent().Welcome();
     
     while (context.IsDone()==false) {
-      Console.Write("> ");
+      Console.WriteLine();
       string? line = Console.ReadLine();
       // Converts input from user to lowercase:)
       line = line.ToLower();

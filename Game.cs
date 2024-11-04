@@ -15,18 +15,12 @@ class Game {
     registry.Register("go", new CommandGo());
     //registry.Register("talk", new CommandNPC());
     registry.Register("help", new CommandHelp(registry));
+    registry.Register("inventory", new CommandInventory()); 
   }
   
   static void Main (string[] args) {
 // Test to see if you can add items to inventory! 
-  Item[] Items = new Item[4];
-  Inventory inventory = new Inventory (Items);
-  inventory.AddItem(new Item ("plastik" , 2, 2));
-  inventory.AddItem(new Item ("skraldepose" , 3, 4));
-  inventory.AddItem(new Item ("tyggegummi" , 4, 2));
-  inventory.AddItem(new Item ("fiskenet" , 5, 7));
-// Test to see if you can display items
-  inventory.InventoryDisplay();
+ 
 
    Console.WriteLine("Welcome to the World of Watercraft!");
     InitRegistry();

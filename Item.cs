@@ -75,7 +75,7 @@ public string GetName()
 
     public override string ToString() 
     {
-    return $"{FirstCharToUpper(GetName())} \t {GetEffect()} \t {GetDescription()}";
+    return $"{FirstCharToUpper(GetName())} \t {GetEffect()} \t\t {GetDescription()}";
     }
 
     

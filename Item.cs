@@ -1,23 +1,13 @@
-using System.Security.Cryptography;
-
-class Item {
-    private string name; 
-    private int effect; 
-    private int keyNumber; 
+class Item(string name, int effect, int keyNumber)
+{
+    private string name = name; 
+    private int effect = effect; 
+    private int keyNumber = keyNumber; 
     
 
-public string itemDescription;
+public required string itemDescription;
 
-// Constructor
-public Item (string name, int effect, int keyNumber)
-{
-    this.name = name; 
-    this.effect = effect; 
-    this.keyNumber = keyNumber; 
-
-
-}
-public static string FirstCharToUpper(string str)
+    public static string? FirstCharToUpper(string str)
 {
     if (str == null) 
         return null;
